@@ -1,6 +1,6 @@
 namespace SimpleEventSource.Core {
-    public abstract class Entity : IEntity {
-        public int Id { get; }
-        public int Version { get; set; } = 0;
+    public abstract record Entity {
+        public int Id { get; init; }
+        public int Version { get; init; } = 0;
     }
 }

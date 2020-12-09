@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace SimpleEventSource.Core {
+namespace SimpleEventSource.Persistence {
     public interface ISimpleEventSourceDbContext {
-        DbSet<Event>
+        DbSet<EventDBO> GetEvents();
     }
 }
